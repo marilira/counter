@@ -9,6 +9,8 @@ function App() {
   }
 
   function countDown() {
+    if (count <= 0)
+      return;
     setCount(count - 1);
   }
 
