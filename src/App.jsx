@@ -37,20 +37,12 @@ function App() {
 
   return (
     <main className="page">
-      <div className="counter-card">
+      <div className="layout">
+        <div className="counter-card">
         <h1 className="text-2xl font-bold text-gray-800">Counter</h1>
 
         <Counter count={count} />
 
-        <div className="increment-card">
-          <div className="increment-info">
-            <h3 className="increment-title">VALOR DO INCREMENTO</h3>
-            <p className="increment-value">{increment}</p>
-          </div>
-          <Button className="increment-button" onclick={handleIncrement}>
-            Alterar
-          </Button>
-        </div>
 
         <div className="flex items-center gap-5">
           <Button
@@ -72,6 +64,20 @@ function App() {
           Reset
         </Button>
       </div>
+      <div className="counter-card">
+        <h2 className="text-xl font-bold text-gray-800">Configurações</h2>
+        <div className="increment-card">
+          <div className="increment-info">
+            <h3 className="increment-title">VALOR DO INCREMENTO</h3>
+            <p className="increment-value">{increment}</p>
+          </div>
+          <Button className="increment-button" onclick={handleIncrement}>
+            Alterar
+          </Button>
+        </div>
+      </div>
+      </div>
+      
     </main>
   );
 }
