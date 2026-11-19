@@ -15,7 +15,7 @@ function App() {
     setCount(count - 1);
   }
 
-  function zerar() {
+  function reset() {
     setCount(0);
   }
 
@@ -24,7 +24,7 @@ function App() {
       <h2>Counter</h2>     
       <Counter count={count} />
       <Button onclick={handleCounter}>incremente</Button>
-      <Button onclick={zerar}>Zerar</Button>
+      <Button onclick={reset}>Zerar</Button>
       <Button onclick={countDown}>Decremente</Button>
     </>
   )
