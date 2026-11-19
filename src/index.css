@@ -1,22 +1,46 @@
 @import "tailwindcss";
 
 @layer components {
-    .page {
-        @apply min-h-screen flex items-center justify-center bg-gray-100 p-4;
-    }
+  .page {
+    @apply min-h-screen flex items-center justify-center bg-gray-100 p-4;
+  }
 
-    .counter-card {
-        @apply w-full max-w-xs bg-white rounded-2xl shadow-lg p-8;
-        @apply flex flex-col items-center gap-6;
-    }
+  .counter-card {
+    @apply w-full max-w-xs bg-white rounded-2xl shadow-lg p-8;
+    @apply flex flex-col items-center gap-6;
+  }
 
-    .circle-button {
-        @apply w-14 h-14 rounded-full bg-gray-200 cursor-pointer;
-        @apply text-gray-700 text-2xl hover:bg-gray-300 transition-colors;
-    }
+  .circle-button {
+    @apply w-14 h-14 rounded-full bg-gray-200 cursor-pointer;
+    @apply text-gray-700 text-2xl hover:bg-gray-300 transition-colors;
+  }
 
-    .reset-button {
-        @apply w-full py-3 rounded-lg bg-red-200 cursor-pointer;
-        @apply text-red-800 font-semibold hover:bg-red-300 transition-colors;
-    }
+  .reset-button {
+    @apply w-full py-3 rounded-lg bg-red-200 cursor-pointer;
+    @apply text-red-800 font-semibold hover:bg-red-300 transition-colors;
+  }
+  
+  .increment-card {
+    @apply w-full flex items-center justify-between;
+    @apply bg-gray-50 border border-gray-200;
+    @apply rounded-xl p-4;
+  }
+
+  .increment-info {
+    @apply flex flex-col gap-1;
+  }
+
+  .increment-title {
+    @apply text-xs font-semibold tracking-wider text-gray-500;
+  }
+
+  .increment-value {
+    @apply text-2xl font-bold text-gray-800;
+  }
+
+  .increment-button {
+    @apply px-4 py-2 rounded-lg;
+    @apply bg-gray-200 text-gray-700 font-medium;
+    @apply hover:bg-gray-300 transition-colors;
+  }
 }
