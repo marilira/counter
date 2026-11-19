@@ -10,12 +10,16 @@ function App() {
   }
 
   function countDown() {
-    if (count <= 0)
+    if (count <= 0) {
+      window.alert("Não é possível ter valores negativos");
       return;
+    }
     setCount(count - 1);
   }
 
   function reset() {
+    if (count == 0)
+      window.alert("Counter já foi resetado");
     setCount(0);
   }
 
